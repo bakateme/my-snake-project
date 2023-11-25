@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #3498db;
+  font-family: 'Pacifico', cursive; /* Change the font-family to something aesthetic */
+  color: #fff;
+}
+
+/* ... (existing styles remain unchanged) */
+
+.game-container {
+  position: relative;
+}
+
+.info-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1; /* Ensure the info-container is above the canvas */
+}
+
+.score {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+button {
+  padding: 12px;
+  font-size: 18px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 50px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+canvas {
+  border: 2px solid #fff;
+}
+
+/* Styles for elements outside the game container */
+
+.button-outside {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2; /* Ensure the elements outside the container are above the canvas */
+}
+
+.score-outside {
+  font-size: 24px;
+}
+
+.button-outside {
+  padding: 12px;
+  font-size: 18px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-outside:hover {
+  background-color: #c0392b;
+}
+.high-score {
+  color: #ffffff; /* Highlight color, you can change it */
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 100px;
+  margin-right: 50 px;
+}
